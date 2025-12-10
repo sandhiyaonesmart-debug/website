@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <style>
+      body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: white;
+      color: #333;
+      line-height: 1.6;
+    }
+
+      .smart-services {
+      display: flex;
+      padding: 60px 40px;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+      .services-left {
+      flex: 1;
+      max-width: 300px;
+    }
+
+      .services-left h2 {
+      font-size: 2rem;
+      color:purple;
+      line-height: 1.3;
+    }
+
+      .services-left p {
+      margin-top: 15px;
+      line-height: 1.6;
+      color: #555;
+    }
+      body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      
+    }
+
+      .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+      .service-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      opacity: 0;
+      transform: translateX(-80px);
+      transition: all 0.8s ease;
+    }
+
+      .service-box.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+      .service-box i {
+      font-size: 40px;
+      color:purple;
+      min-width: 40px;
+    }
+
+      .service-box h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+      color: #111;
+    }
+
+      .service-box p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.4;
+    }
+      .numbers {
+      background: #d7ebf5; /* light blue bg */
+      padding: 50px 20px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+      .numbers h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+      .numbers .subtitle {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+      .numbers .line {
+      width: 50px;
+      height: 3px;
+      background: orange;
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+      .numbers .desc {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 15px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+      .stats {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+      .card {
+      background: #fff;
+      padding: 25px 30px;
+      border: 1px solid #f5a65b;
+      border-radius: 12px;
+      width: 220px;
+      transition: 0.3s;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+      .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+      .card i {
+      font-size: 40px;
+      color: purple;
+      margin-bottom: 15px;
+    }
+
+      .card h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+      .card p {
+      font-size: 15px;
+      color: #333;
+    }
+    body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+  }
+
+  .bold-purple {
+    color: #4b2363;
+  }
+
+  .partners {
+    text-align: center;
+    padding: 40px 20px 10px;
+    background-color: #fff;
+  }
+
+  .partner-logos {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .partner-logos img {
+    max-height: 50x;
+    max-width: 100px;
+  }
+      
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <br>
+    <section class="smart-services" style="background-color: aliceblue;">
+    <div class="services-left">
+      <h2>Our <br> Smart Services</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.
+      </p>
+    </div>
+    </section>
+    <br>
+    <section class="services">
+    <div class="service-box">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <div>
+        <h3>E-COMMERCE SELLER ACCOUNT MANAGEMENT</h3>
+        <p> #</p>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <i class="fa-solid fa-desktop"></i>
+      <div>
+        <h3>GLOBAL SELLER ACCOUNT MANAGEMENT</h3>
+        <p>#</p>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <i class="fa-solid fa-list-check"></i>
+      <div>
+        <h3>QUICK COMMERCE ONBOARDING/SELLER ACCOUNT MANAGEMENT</h3>
+        <p>#</p>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <i class="fa-solid fa-laptop-code"></i>
+      <div>
+        <h3>WEBSITE DEVELOPMENT</h3>
+        <p>#</p>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <i class="fa-solid fa-bullhorn"></i>
+      <div>
+        <h3>DIGITAL MARKETING</h3>
+        <p>#</p>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <i class="fa-solid fa-thumbs-up"></i>
+      <div>
+        <h3>E-COMMERCE PHOTOSHOOT</h3>
+        <p>#</p>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <i class="fa-solid fa-camera"></i>
+      <div>
+        <h3>ADVERTISEMENT SHOOT</h3>
+        <p>#</p>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <i class="fa-solid fa-file-signature"></i>
+      <div>
+        <h3>ACCOUNT RECONCILLIATION</h3>
+        <p>#</p>
+      </div>
+    </div>
+
+    <div class="service-box">
+      <i class="fa-solid fa-mobile-screen-button"></i>
+      <div>
+        <h3>MOBILE APP DEVELOPMENT</h3>
+        <p>#</p>
+      </div>
+    </div>
+    <div class="service-box">
+      <i class="fa-solid fa-star"></i>
+      <div>
+        <h3>DESIGNING</h3>
+        <p>#</p>
+      </div>
+    </div>
+    <div class="service-box">
+      <i class="fa-solid fa-video"></i>
+      <div>
+        <h3>VIDEO EDITING</h3>
+        <p>#</p>
+      </div>
+    </div>
+    <div class="service-box">
+      <i class="fa-solid fa-stairs"></i>
+      <div>
+        <h3>OTHER SERVICES</h3>
+        <p>#</p>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section class="numbers" style="background-color: #f5f5f5;">
+  <div class="container">
+    <h2>Let's Talk Number</h2>
+    <p class="subtitle">Experience and Mindset in Building Success</p>
+    <div class="line"></div>
+    <p class="desc">
+      To derive the expected results, it is vital to have a clear path and stay focused that will assist you in achieving your goals. 
+      Our vision is to leverage the full potential of the Internet to deliver measurable outcomes to our clients
+    </p>
+
+    <div class="stats">
+      <div class="card">
+        <i class="fa-solid fa-users"></i>
+        <h3>40k+</h3>
+        <p>Served Clients</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-briefcase"></i>
+        <h3>1.5+</h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-headset"></i>
+        <h3>8L+</h3>
+        <p>Daily Order</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-store"></i>
+        <h3>8Cr+</h3>
+        <p>Daily Revenue</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="partners">
+    <h2><span class="bold-purple">Power in Partnership</span></h2>
+    <p><strong>“Building Success with Trusted Platforms.”</strong></p>
+    <div class="partner-logos">
+      <img src="image/amazon.png" alt="Amazon">
+      <img src="image/flipkart.png" alt="Flipkart">
+      <img src="image/meesho.png" alt="Meesho">
+      <img src="image/myntra.png" alt="Myntra">
+    </div>
+  </section>
+<div id="contact"></div>
+
+  <script>
+    // Reveal animation when scrolling
+    const boxes = document.querySelectorAll(".service-box");
+
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      boxes.forEach((box, index) => {
+        const boxTop = box.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          setTimeout(() => {
+            box.classList.add("show");
+          }, index * 150); // delay effect
+        }
+      });
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
+
+    
+  <script src="script.js"></script>
+</body>
+</html>

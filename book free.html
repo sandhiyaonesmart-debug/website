@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Free Consultation</title>
+  <style>
+.consultation-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.consultation-form h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color:purple;
+  margin-bottom: 20px;
+}
+
+.consultation-form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.consultation-form input[type="text"],
+.consultation-form input[type="email"],
+.consultation-form input[type="tel"],
+.consultation-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.consultation-form textarea {
+  resize: none;
+  height: 70px;
+}
+
+.options {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.captcha {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.consultation-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: darkgreen;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.consultation-form button:hover {
+  background: #007bb5;
+}
+
+  </style>
+</head>
+<body>
+  <div class="consultation-form">
+  <h2>Book Free Consultation</h2>
+  <form>
+    <label>Name *</label>
+    <input type="text" placeholder="Type your name..." required>
+
+    <label>E-mail *</label>
+    <input type="email" placeholder="Type your email..." required>
+
+    <label>Phone *</label>
+    <input type="tel" placeholder="Type your Phone no..." required>
+
+    <label>Requirements</label>
+    <textarea placeholder="Type your message..."></textarea>
+
+    <label>Language *</label>
+    <div class="options">
+      <input type="radio" name="language" value="English"> English
+      <input type="radio" name="language" value="Hindi"> Hindi
+      <input type="radio" name="language" value="Tamil"> Tamil
+      <input type="radio" name="language" value="Kannada"> Kannada
+    </div>
+
+    <label>Services *</label>
+    <div class="options">
+      <input type="radio" name="service" value="Website Development"> Website Development <br>
+      <input type="radio" name="service" value="Seller Account Management"> Seller Account Management <br>
+      <input type="radio" name="service" value="Social Media Marketing"> Social Media Marketing
+    </div>
+
+    <!-- reCAPTCHA placeholder -->
+    <div class="captcha">
+      <input type="checkbox"> I'm not a robot
+    </div>
+
+    <button type="submit">submit</button>
+  </form>
+</div>
+
+</body>
+</html>

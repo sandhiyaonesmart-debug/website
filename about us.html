@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About </title>
+    <style>
+    body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+
+  }
+
+  h2 {
+    color: #4b0082;
+    font-weight: bold;
+    
+  }
+
+  .stats-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background: #f5f5f5;
+  }
+
+  .stats {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .stats div h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #000;
+  }
+
+  .stats div p {
+  margin: 5px 0 0;
+  }
+
+  .about {
+    flex: 2;
+    padding-left: 50px;
+  }
+
+  .about .tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #444;
+  }
+
+  .about .desc {
+  margin-top: 15px;
+  font-size: 1rem;
+  }
+
+  .cta-box {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #075728;
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+  }
+
+  .years {
+  font-size: 2rem;
+  flex: 1;
+  }
+
+  .years span {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .cta {
+  flex: 2;
+  text-align: right;
+  }
+
+  .cta button {
+    margin-top: 10px;
+    background: #fbbf24;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  /*Our Service*/
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color:white ;
+  }
+
+    .section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    
+  }
+
+    .section h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+    .section p.subheading {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+
+    .content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+    .services {
+    flex: 1;
+ }
+
+    .services h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+    .service-item {
+    margin-bottom: 25px;
+  }
+
+    .service-item h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px;
+    display: flex;
+    align-items: center;
+  }
+
+    .service-item h4 span {
+    margin-right: 8px;
+    font-size: 18px;
+    color: blueviolet;  /* ✔ color */
+  }
+
+    .service-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+  }
+
+    .image-box {
+    flex: 1;
+  }
+
+    .image-box img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .testimonial-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f6f6f6;
+  }
+
+  .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #4b2363;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .testimonial-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .arrow-btn {
+    background-color: transparent;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .arrow-btn:hover {
+    background-color: #ddd;
+  }
+
+  .testimonial-text {
+    max-width: 600px;
+  }
+
+  .quote {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .author {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 5px;
+  }
+
+  .position {
+    font-size: 1rem;
+    color: #4b2363;
+  }
+
+  .position a {
+    color: #4b2363;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .position a:hover {
+    text-decoration: underline;
+  }
+    .projects-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #4b2363;
+    margin-bottom: 40px;
+  }
+
+  .project-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .project-card {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .project-card img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255,255,255,0.8);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .overlay h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #000;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0 10px;
+  }
+
+  .arrow-btn {
+    display: inline-block;
+    background-color: #4b2363;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 2px;
+  }
+
+  .navigation-dots {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-btn {
+    font-size: 1.2rem;
+    padding: 6px 12px;
+    border-radius: 50%;
+    border: 1px solid #4b2363;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .dot {
+    width: 50px;
+    height: 2px;
+    background-color: #aaa;
+    display: inline-block;
+  }
+
+  .dot.active {
+    background-color: #4b2363;
+  }
+
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <section class="stats-section">
+    <div class="stats">
+      <div><h2>500+</h2><p>Seller Accounts Managed</p></div>
+      <div><h2>1500+</h2><p>Products Launched Online</p></div>
+      <div><h2>100+</h2><p>Websites Developed</p></div>
+      <div><h2>10 Cr+</h2><p>Monthly Revenue Managed</p></div>
+    </div>
+    <div class="about">
+      <h2 style="color: purple;">About </h2>
+      <p class="tagline">“List Fast, Sell Vast”</p>
+      <p class="desc">
+        Onesmart is a marketing agency that specializes in e-commerce marketplace account management, catalog listings, product photoshoot, and digital marketing. With our expertise, we help businesses succeed in the online marketplace by optimizing their listings, managing their accounts, and driving digital marketing strategies.
+      </p>
+      <div class="cta-box"style="background-color: darkgreen;">
+        <div class="years" ><span>10+</span> Years<br>Expertise</div>
+        <div class="cta">
+          <p>“Ready to discover more about us?”</p>
+          <button>Click Here ⟶</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class=" services-section">
+    <center>
+    <h2 style="color:purple;">What<strong> We Do</strong></h2>
+    <p class="subheading">We don’t just help you sell online — We build your entire digital presence from scratch to success.</p>
+    </center>
+    <div class="content">
+        <!--left side services-->
+        <div class="services">
+            <h3 style="color: darkgreen;">Our Services</h3>
+            <div class="service-item">
+            <h4><span>✔️</span>E-Commerce Marketplace Management</h4>
+            <p>From setting up your stores to managing orders, listings, and scaling your sales on Amazon, Flipkart, Myntra, Ajio, Meesho, and more — we handle it all, both locally and globally, to help your business grow across marketplaces worldwide.</p>
+            </div>
+
+            <div class="service-item">
+                <h4><span>✔️</span>SEO & Digital Visibility</h4>
+                <p>We optimize your brand for maximum visibility across search engines and digital platforms. Our SEO strategies are designed to not just improve rankings but also to bring qualified traffic that converts into sales. From keyword research and on-page optimization to link building and technical SEO, we ensure your website stays ahead of the competition.</p>
+            </div>
+            <div class="section-item">
+                <h4><span>✔️</span>Website Development</h4>
+                <p>We create modern, responsive, and high-performing websites tailored to your business goals. From simple portfolio websites to advanced e-commerce platforms, our development team ensures that your online presence is not just beautiful but also functional and optimized for results.</p>
+           </div>
+
+            <div class="service-item">
+                <h4><span>✔️</span>Digital Marketing</h4>
+                <p>We help your business grow online with powerful digital marketing strategies that connect you with the right audience. From social media to paid ads, our goal is to increase your brand awareness, generate quality leads, and boost sales.</p>
+            </div>
+        </div>
+          <!-- Right Side: Image -->
+            <div class="image-box">
+            <img src="image/home page.jpg" alt="Digital Marketing Services">
+            </div>        
+        </div>
+  </section>
+
+  <section class="testimonial-section" style="background-color: aqua;">
+    <h2 class="title">Trusted by Growing Brands</h2>
+    
+    <div class="testimonial-content">
+      <button class="arrow-btn">&#8592;</button>
+
+      <div class="testimonial-text">
+        <p class="quote">
+          “Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book.”
+        </p>
+        <p class="author">Laure Spinello</p>
+        <p class="position">Founder, <a href="#">Anora Clothing</a></p>
+      </div>
+
+      <button class="arrow-btn">&#8594;</button>
+    </div>
+  </section>
+  <br>
+  <section class="projects-section" style="background-color: aliceblue;">
+    <h2 class="section-title">Project Highlights</h2>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="image/smartstore setup.jpg" alt="SmartStore Setup">
+        <div class="overlay">
+          <h3>SmartStore Setup</h3>
+          <p>Marketplace Onboarding</p>
+          <a href="#" class="arrow-btn">→</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="image/webready.avif" alt="Web Ready">
+        <div class="overlay">
+          <h3>Web Ready</h3>
+          <p>Business Website Development</p>
+          <a href="#" class="arrow-btn">→</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="image/system.webp" alt="Ad Drive">
+        <div class="overlay">
+          <h3>Ad Drive</h3>
+          <p>Digital Campaign Management</p>
+          <a href="#" class="arrow-btn">→</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-dots">
+      <span class="dot active"></span>
+      <button class="nav-btn">&#8592;</button>
+      <button class="nav-btn">&#8594;</button>
+      <span class="dot"></span>
+    </div>
+  </section>
+  <br>
+    
+  <div id="contact"></div>
+    <script src="script.js"></script>
+</body>
+</html>
