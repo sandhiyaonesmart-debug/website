@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Left Box */
+    .contact-info {
+      flex: 1;
+      background:purple;
+      color: white;
+      padding: 40px;
+      border-radius: 10px 0 0 10px;
+      min-width: 300px;
+    }
+
+    .contact-info h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info strong {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+    }
+
+    .social-icons a {
+      margin-right: 15px;
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    /* Right Form */
+    .contact-form {
+      flex: 2;
+      background: #fff;
+      padding: 40px;
+      border: 1px solid #eee;
+      border-radius: 0 10px 10px 0;
+      min-width: 350px;
+    }
+
+    .contact-form h2 {
+      color: purple;
+      margin-bottom: 10px;
+    }
+
+    .contact-form p {
+      margin-bottom: 25px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    .form-group {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .form-group input, 
+    .form-control {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    .form-control {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      background:darkgreen;
+      color: white;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: darkgreen;
+    }
+  </style>
+</head>
+<body>
+    <div id="header"></div>
+
+  <section class="contact-section">
+    <!-- Left Info Box -->
+    <div class="contact-info">
+      <h2>Launch & Grow Your<br>Ecommerce Business<br>10X Faster</h2>
+      <p>Let's discuss potential opportunities for your Business! Apply Now!</p>
+
+      <strong>Expertise Support:</strong>
+      <p>📞 Phone: 91- 7708 524 307</p>
+      <p>📧 Email: info@onesmartsolutions.in</p>
+
+      <strong>Social Links:</strong>
+      <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Form -->
+    <div class="contact-form">
+      <h2>GET IN TOUCH</h2>
+      <p>Fill This form, Our Expertise will reach you soon!</p>
+
+      <form>
+        <div class="form-group">
+            <h3>Name:</h3>
+          <input type="text" name="name" placeholder="Full Name" required>
+          <h3>Mobile Number:</h3>
+          <input type="number" name="phone" placeholder="9876543210" required>
+        </div>
+
+        <h3>Email:</h3>
+        <input type="email" name="email" placeholder="Email Address" required style="margin-bottom:20px; width:100%; padding:12px; border:1px solid #ccc; border-radius:5px;">
+        <h3>Chat Us:</h3>
+        <textarea class="form-control" name="message" placeholder="Message"></textarea>
+
+        <!-- Google reCAPTCHA -->
+        <div style="margin:20px 0;">
+          <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Google reCAPTCHA Script -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <div id="contact"></div>
+<script src="script.js"></script>
+
+</body>
+</html>

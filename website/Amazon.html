@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> AmazonFee Calculator</title>
+  <style>
+    .heading-section{
+        background-color: #f5f7fa;
+    }
+    .heading-section h2{
+        text-align: center;
+        font-weight: bold;
+        color: black;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      flex: 1;
+      min-width: 300px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .btn {
+      background:purple;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 50%;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: purple;
+    }
+
+    .result-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .result-item:last-child {
+      border-bottom: none;
+    }
+
+    .profit {
+      background: purple;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    .contact{
+      margin-top:18px;
+      text-align:center;
+    }
+    .contact h3{margin:8px 0 6px; font-size:24px}
+    .muted{color:var(--muted)}
+    .cta{
+      margin-top:14px;
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    .btn-outline, .btn-wa{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 16px; border-radius:9999px; font-weight:700; border:1px solid var(--border); background:#fff; cursor:pointer
+    }
+    .btn-outline:hover{box-shadow:0 0 0 4px rgba(14,165,233,.12)}
+    .btn-wa{ border-color:#d1fae5 }
+    .btn-wa:hover{ box-shadow:0 0 0 4px rgba(34,197,94,.15) }
+
+    .icon{display:inline-block; width:20px; height:20px}
+
+    /* Responsive */
+    @media (max-width: 920px){
+      .grid{grid-template-columns:1fr}
+      .form-grid{grid-template-columns:1fr}
+      .btn{width:100%}
+    }
+  </style>
+</head>
+<body>
+    <div id="header"></div>
+    <section class="heading-section">
+        <h2>Amazon Fees Calculater</h2>
+    </section>
+
+  <div class="container">
+    <!-- Calculation Card -->
+    <div class="card">
+      <h2>Calculation</h2>
+      <div class="form-group">
+        <label>Category</label>
+        <select>
+          <option>Select Category</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Subcategory</label>
+        <select>
+          <option>Select a Subcategory</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Enter Price (₹)</label>
+        <input type="number" placeholder="Enter Price">
+      </div>
+
+      <div class="form-group">
+        <label>Weight (gm)</label>
+        <input type="number" placeholder="Weight (gm)">
+      </div>
+
+      <div class="form-group">
+        <label>Area</label>
+        <select>
+          <option>Local</option>
+          <option>Zonal</option>
+          <option>National</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Shipping Method</label>
+        <select>
+          <option>Amazon FBA</option>
+          <option>Self Shipping</option>
+          <option>Amazon Eacy Shipping</option>
+          <option>Seller Felx</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Select Step Level</label>
+        <select>
+          <option>Basic</option>
+          <option>Premium</option>
+          <option>Advance</option>
+          <option>Standard</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Select GST Percentage</label>
+        <select>
+          <option>18%</option>
+          <option>12%</option>
+          <option>5%</option>
+        </select>
+      </div>
+
+      <button class="btn">Calculate</button>
+    </div>
+
+    <!-- Result Card -->
+    <div class="card">
+      <h2>Result</h2>
+      <div class="result-item"><span>Referral Fee:</span> <span>₹0</span></div>
+      <div class="result-item"><span>Closing Fee:</span> <span>₹0</span></div>
+      <div class="result-item"><span>Shipping Fee:</span> <span>₹0</span></div>
+      <div class="result-item"><span>Total Fees:</span> <span>₹0</span></div>
+      <div class="result-item"><span>GST:</span> <span>₹0</span></div>
+      <div class="result-item"><span>Total Cost:</span> <span>₹0</span></div>
+
+      <div class="profit">Your Profit: ₹0</div>
+
+      <div class="contact">
+          <h3>Contact Us</h3>
+          <p class="muted">To increase your profits even more, talk to our Expert team.</p>
+          <div class="cta">
+            <button class="btn-outline" type="button">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a4 4 0 01-4 4H7l-4 4V7a4 4 0 014-4h10a4 4 0 014 4v8z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Chat With Us
+            </button>
+            <button class="btn-wa" type="button">
+              <svg class="icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.006 3C9.376 3 4 8.375 4 15.004c0 2.112.552 4.093 1.52 5.818L4 29l8.35-1.478A11.9 11.9 0 0016.006 27C22.635 27 28 21.625 28 14.996 28 8.367 22.635 3 16.006 3zm6.777 17.161c-.284.8-1.647 1.52-2.287 1.56-.612.04-1.392.056-2.248-.14-.52-.12-1.188-.38-2.04-.744-3.588-1.548-5.914-5.16-6.098-5.401-.18-.24-1.462-1.948-1.462-3.717 0-1.77.926-2.635 1.255-3.003.33-.368.72-.46.96-.46.24 0 .48 0 .69.012.22.01.52-.084.815.62.284.682.97 2.355 1.058 2.525.084.17.14.37.028.61-.112.24-.17.37-.336.57-.17.2-.356.45-.51.606-.17.17-.35.36-.15.706.2.33.89 1.47 1.9 2.38 1.302 1.16 2.4 1.52 2.75 1.69.35.17.55.15.76-.09.198-.24.868-1.01 1.102-1.36.23-.35.462-.29.77-.17.31.12 1.95.92 2.29 1.09.34.17.57.25.66.39.09.14.09.82-.19 1.62z" fill="#22C55E"/></svg>
+              Chat On Whatsapp
+            </button>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div id="contact"></div>
+   <script src="script.js"></script>
+
+</body>
+</html>
